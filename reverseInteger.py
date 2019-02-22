@@ -1,5 +1,6 @@
 class Solution:
-    """ Example 1:
+    """  LeetCode 7
+    Example 1:
     Input: 123
     Output: 321
 
