@@ -13,5 +13,4 @@ class Solution:
                 d[s[i]] = t[i]
             elif d[s[i]] != t[i]:
                 return False
-
         return True
