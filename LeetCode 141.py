@@ -3,6 +3,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     def hasCycle(self, head):
         processed = set()
@@ -12,6 +13,7 @@ class Solution:
                 return True
             else:
                 processed.add(cur)
+            cur = cur.next
         return False
 
 
