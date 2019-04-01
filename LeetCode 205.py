@@ -6,6 +6,7 @@ class Solution:
         return self.halfIsom(s, t) and self.halfIsom(t, s)
 
 
+
     def halfIsom(self, s, t):
         d = {}
         for i in range(len(s)):
