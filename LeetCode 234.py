@@ -12,16 +12,13 @@ class Solution:
         while fast and fast.next:
             stack.append(slow.val)
             slow = slow.next
-            fast = fast.next.next
+            fast = fast.next
 
         if fast:
             slow = slow.next
-
+        
         while slow:
-            top = stack.pop()
-            if top != slow.val:
+            if stack.pop() != slow.val:
                 return False
             slow = slow.next
-
         return True
-        
