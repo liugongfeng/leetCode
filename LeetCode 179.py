@@ -11,5 +11,8 @@ class Solution:
     def method2(self, nums):
         def cmp(a, b):
             return int(b+a) - int(a+b)
-
+        
+        nums = list(map(str, nums))
+        nums.sort(key=cmp_to_key(cmp))
+        return ''.join(nums).lstrip('0') or '0'
         
