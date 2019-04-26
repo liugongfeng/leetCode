@@ -49,5 +49,7 @@ class Solution:
         if x < 0 or x >= len(grid) or y < 0 or y >= len(grid[0]) or grid[x][y] != '1':
             return 
         grid[x][y] = "#"
-        for k in range(4):
-            self.DFS(grid, x + self.dx[k], y + self.dy[k])
+        self.DFS(grid, x+1, y)
+        self.DFS(grid, x-1, y)
+        self.DFS(grid, x, y+1)
+        self.DFS(grid, x, y-1)
